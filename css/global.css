@@ -1,0 +1,260 @@
+/*==== TAG-SPECIFIC-CSS ====*/
+body, html {
+	font-family     : 'Rubik', Arial, sans-serif;
+	text-decoration : none;
+
+	height          : 0;
+	width           : 0;
+
+	margin          : 0;
+	padding         : 0;
+}
+
+body {
+	width : 100vw;
+}
+
+p, a, h1, h2, h3, h4, ul {
+	margin          : 0;
+	text-decoration : none;
+}
+
+/*==== LI ====*/
+li {
+	list-style: none;
+}
+
+li::before{
+	content: "\2B9E";
+}
+
+/*==== H1 ====*/
+/*for mark in h1*/
+h1 {
+	font-size: var(--h1-size-nv-normal);
+}
+
+h1.small {
+	font-size: var(--h1-size-nv-small);
+}
+
+h1 > mark.small {
+	font-size: var(--h1-size-nv-small);
+}
+
+/*==== MARK ====*/
+mark {
+	background-color : transparent;
+}
+
+/*==== P ====*/
+p.bold {
+	font-weight: bolder;
+}
+
+/*==== HR ====*/
+hr.solid {
+	border: 0 solid;
+	height: 2px;
+}
+
+hr.centered {
+	margin: 0 auto 0 auto;
+}
+
+hr.left {
+	margin: 0 auto 0 0;
+}
+
+hr.custom-w50 {
+	width: 50%;
+}
+
+hr.custom-w90 {
+	width: 90%;
+}
+
+/*==== ID/CLASS-SPECIFIC-CSS ====*/
+
+#main-gc {
+	display: grid;
+	grid-auto-flow: row;
+
+	width: 100vw;
+}
+
+.turquoise-bg, .img-bg, .white00-bg, .white10-bg {
+	width: inherit;
+}
+
+.img-bg {
+	background-image: url('../img/backgrounds/blue-green-jungle-leaves.jpg');
+	background-repeat: revert;
+background-size: 60%;
+}
+
+.semi-transparent {
+	width: 100%;
+	height: 100%;
+}
+
+/* HEADER */
+#header-content {
+	display               : grid;
+	grid-template-columns : repeat( 3, 1fr);
+	grid-gap              : inherit;
+}
+
+#header-left, #header-right {
+	display     : flex;
+	justify-content: center;
+	align-items: center;
+
+	height      : 64px;
+}
+
+
+
+/* header-left */
+#header-left {
+	justify-content : flex-start;
+	column-gap: 5px;
+}
+
+#header-left > a {
+	width  : 48px;
+	height : 48px;
+}
+
+#header-left > a > img {
+	width  : 48px;
+	height : 48px;
+}
+
+#header-left > h2 {
+	width : 185px;
+}
+
+/* header-right */
+#header-right {
+	justify-content : flex-end;
+	column-gap: 2px;
+}
+
+#header-right > * {
+	display: flex;
+
+	height: 48px;
+	width: 48px;
+
+	border-radius: 10px;
+}
+
+#header-right > *:hover {
+	cursor: pointer;
+}
+
+#header-right > * > img {
+	height: 40px;
+	width: 40px;
+
+	margin: auto;
+}
+
+/* MENU CONTENT */
+#menu {
+	padding: 32px 0 32px 0;
+	display: none;
+}
+
+#menu-buttons {
+	display: flex;
+	flex-flow: column;
+	row-gap: 16px;
+	margin: 0 auto 0 auto;
+	align-items: center;
+}
+
+.un {
+	display: inline-block;
+	padding-bottom:2px;
+	background-image: linear-gradient(#FFF 0 0);
+	background-position: 0 100%; /*OR bottom left*/
+	background-size: 0% 2px;
+	background-repeat: no-repeat;
+	transition:
+			background-size 0.3s,
+			background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.un:hover {
+	background-position: 100% 100%; /*OR bottom right*/
+	background-size: 100% 2px;
+}
+
+/* BUTTONS */
+.button-txt {
+	display: flex;
+
+	font-size: var(--a-font-size-buttons);
+	/* font-weight: bolder; */
+	align-items: center;
+	justify-content: center;
+}
+
+.button-txt.inactive:hover {
+	cursor: pointer;
+}
+
+.button-cb {
+	height: var(--business-customer-switch);
+	border-radius: calc( 0.5 * var(--business-customer-switch));
+	width: 50%;
+}
+
+.button-discover {
+	height: var(--open-account-button-height);
+	padding: 0 calc( 0.4 * var(--open-account-button-height)) 0 calc( 0.4 * var(--open-account-button-height));
+	border-radius: calc( 0.5 * var(--open-account-button-height));
+	align-self: center;
+}
+
+/* FOOTER */
+#footer {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	row-gap: 24px;
+
+	justify-content: center;
+	padding: 32px 0 32px 0;
+}
+
+#footer > div {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+
+#footer > div > div {
+	display: flex;
+	flex-flow: column;
+	min-width: 180px;
+	row-gap: 4px;
+	margin: 0 auto 0 auto;
+}
+
+#footer > div > div > a {
+	display: flex;
+	height: 24px;
+}
+
+#footer > div > div > a:hover {
+	text-decoration: underline;
+}
+
+#footer > div > div > a > p {
+	text-justify: distribute-all-lines;
+	margin: auto 0 auto 0;
+}

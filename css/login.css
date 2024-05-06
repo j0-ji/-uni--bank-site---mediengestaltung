@@ -1,0 +1,87 @@
+#main-gc {
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column;
+}
+
+header {
+	flex: 0 1 64px;
+}
+
+#login-bg {
+	height: calc( 100vh - 64px - 138px );
+	flex: 1 1 auto;
+}
+
+footer {
+	flex: 0 1 auto;
+}
+
+#login  {
+	display: flex;
+	flex-flow: column;
+	max-height: fit-content;
+	padding: 32px 0 32px 0;
+	row-gap: 16px;
+}
+
+#login-header {
+	display: flex;
+	flex-flow: column;
+	row-gap: 16px;
+}
+
+#login-header > h1 {
+	margin: 0 auto 0 auto;
+}
+
+#login-window {
+	display: flex;
+	flex-flow: column;
+	row-gap: 12px;
+	max-width: 300px;
+	border-radius: calc( 0.5 * var(--business-customer-switch));
+	align-self: center;
+}
+
+#login-window > div:first-child {
+	display: flex;
+	border-radius: calc( 0.5 * var(--business-customer-switch));
+}
+
+#inputs {
+	display: flex;
+	flex-flow: column;
+
+	padding: 12px;
+	row-gap: 8px;
+}
+
+#inputs > * {
+	border: 1px solid transparent ;
+	height: 24px;
+	border-radius: 12px;
+	padding: 0 12px 0 12px;
+}
+
+#inputs > *:focus {
+	outline-style: solid;
+}
+
+#inputs-buttons {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.inputs-button.center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-decoration: none;
+}
+
+.inputs-button.center > p:hover {
+	text-decoration: underline;
+}
+

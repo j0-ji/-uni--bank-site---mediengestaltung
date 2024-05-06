@@ -1,0 +1,148 @@
+/* TITLE SCREEN CONTENT */
+#title-screen-content, #title-screen, #title-screen > .semi-transparent {
+	min-height: min(450px, calc(100vh - 64px));
+	max-height: 600px;
+	height: 61.8vh;
+}
+
+#title-screen-content {
+	display: flex;
+}
+
+#title-screen-content> h1 {
+	height: fit-content;
+	align-self: center;
+}
+
+/* BENEFITS */
+#benefits {
+	display: grid;
+	grid-auto-rows: auto;
+	grid-template-columns: repeat(auto-fit, minmax( min( 100%, 282px), 1fr));
+	gap: 32px;
+
+	padding: 48px 0 48px 0;
+}
+
+#benefits > * {
+	display: flex;
+	flex-flow: column;
+	row-gap: 16px;
+}
+
+.benefit-img {
+	width  : 200px;
+	height : 200px;
+	flex-shrink: 0;
+	align-self: center;
+
+	border-radius: 5px;
+}
+
+.benefit-description {
+	text-align: center;
+	font-size: var(--p-font-size-benefits);
+	line-height: 28px;
+	font-weight: bolder;
+}
+
+/* PRODUCT OVERVIEW */
+#product-overview {
+	display: flex;
+	flex-flow: column;
+	row-gap: 32px;
+
+	padding: 48px 0 48px 0;
+}
+
+/* overview header */
+.content-header {
+	display: flex;
+	flex-flow: column;
+	row-gap: 12px;
+}
+
+.content-header > h1 {
+	display: flex;
+	justify-content: center;
+}
+
+.content-header > p {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	width: min(550px, 100%);
+}
+
+.content-header > div {
+	display: flex;
+	width: 300px;
+	border-radius: calc( 0.5 * var(--business-customer-switch));
+	align-self: center;
+}
+
+#content-header > div > a.left {
+	align-self: flex-start;
+}
+
+#content-header > * > a.right {
+	align-self: flex-end;
+}
+
+/* overview content*/
+#products {
+	display: flex;
+	flex-flow: column;
+	row-gap: 16px;
+}
+
+.plan {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	padding: 24px;
+	gap: 32px;
+
+	width: available;
+	align-self: center;
+
+	border-radius: 5px;
+}
+
+.plan-img {
+	height: 100px;
+	width: 100px;
+	flex-shrink: 0;
+	align-self: center;
+	margin: auto;
+
+	border-radius: 3px;
+}
+
+.plan > div {
+	display: flex;
+	flex-flow: column;
+	row-gap: 16px;
+	width: 280px;
+	margin: auto;
+
+	align-self: center;
+}
+
+.plan > div > h2 {
+	align-self: center;
+}
+
+.plan > div > ul {
+	width: fit-content;
+	padding-left: 22px;
+	line-height: 24px;
+	align-self: center;
+}
+
+.plan > div > div {
+	display: flex;
+	flex-flow: row;
+	width: fit-content;
+	margin: 0 auto 0 auto
+}
+

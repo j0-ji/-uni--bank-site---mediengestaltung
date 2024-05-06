@@ -1,0 +1,204 @@
+/*==== GLOBAL-VARS ====*/
+:root {
+	--transition-time-on : .3s;
+	--transition-time-of : .2s;
+}
+
+.config {
+	/* TEXT */
+	--h1-size-wv-normal: 66px;
+	--h1-size-wv-small: 40px;
+	--h1-size-nv-normal : 50px;
+	--h1-size-nv-small : 30px;
+	--h1-size-sv-normal: 38px;
+	--h1-size-sv-small : 23px;
+
+	--p-font-size-benefits : 18px;
+	--a-font-size-buttons: 18px;
+
+	/* BUTTONS */
+	--open-account-button-height: 50px;
+	--business-customer-switch: 50px
+}
+
+.main-theme {
+	--primary-color             : #EDEDED;
+	--primary-color-highlight   : #DBDBDB;
+	--secondary-color           : #0D0D0D;
+	--secondary-color-highlight : #1C1C1C;
+
+	/*low contrast theme start [DEPRECATED]*/
+	--brand-dgreen              : #6A7366;
+	--brand-lgreen              : #AABFA4;
+	--brand-white               : #F9F8F8; /*probably not user bcs of primary color*/
+	--brand-lbeige              : #F2E3D5;
+	--brand-dbeige              : #BFB3A8;
+	/*low contrast theme end*/
+
+	--semi-transparent-layer    : rgba(17, 17, 17, 0.85);
+
+	/*jungle theme start [DEPRECATED]*/
+	--jungle-dark-01            : #0C160C;
+	--jungle-dark-02            : #283425;
+	--jungle-medium             : #576927;
+	--jungle-light-01           : #758054;
+	--jungle-light-02           : #999F84;
+	/*jungle theme end*/
+
+	--turquoise-01              : #002a2a;
+	--turquoise-00              : #022F30;
+	--turquoise-10              : #063837;
+	--turquoise-20              : #073938;
+	--turquoise-30              : #084645;
+	--turquoise-40              : #085355;
+	--turquoise-50              : #0A6F74;
+	--turquoise-60              : #0D939A;
+	--turquoise-70              : #10B7C0;
+	--turquoise-80              : #13DBE6;
+
+	--beige-gold-00             : #9A5A3E;
+	--beige-gold-10             : #A76E4D;
+	--beige-gold-20             : #B57E65;
+	--beige-gold-25             : #CC937A;
+	--beige-gold-30             : #D8A88D;
+	--beige-gold-40             : #F0B791;
+	--beige-gold-50             : #F2E3D5;
+
+	--white-04                  : #959595;
+	--white-03                  : #A4A4A4;
+	--white-02                  : #B9B9B9;
+	--white-01                  : #CFCFCF;
+	--white-00                  : #DBDBDB;
+	--white-05                  : #E4E4E4;
+	--white-10                  : #EDEDED;
+	--white-20                  : #F9F8F8;
+}
+
+/*==== TAG-SPECIFIC ====*/
+body, html, #menu-buttons > a, #footer > div > div > a {
+	color: var(--white-20);
+}
+
+/*====== gold ======*/
+p.gold30 {
+	color: var(--beige-gold-25);
+}
+
+mark.gold30 {
+	color : var(--beige-gold-30)
+}
+
+mark.gold25 {
+	color: var(--beige-gold-25);
+}
+
+hr.gold30 {
+	background-color: var(--beige-gold-30);
+}
+
+hr.gold25 {
+	background-color: var(--beige-gold-25);
+}
+
+/*====== turquoise ======*/
+hr.turquoise {
+	background-color: var(--turquoise-40);
+}
+
+/*====== white ======*/
+mark.white {
+	color: var(--white-20);
+}
+
+/*==== ID/CLASS-SPECIFIC ====*/
+.turquoise00-bg {
+	background-color: var(--turquoise-00);
+}
+
+.turquoise10-bg {
+	background-color: var(--turquoise-10);
+}
+
+.white00-bg {
+	background-color: var(--white-05);
+}
+
+.white10-bg {
+	background-color: var(--white-10);
+}
+
+.white20-bg {
+	background-color: var(--white-20);
+}
+
+.semi-transparent {
+	background-color : rgba(0, 0, 0, 0.45);
+}
+
+#header-right > *:hover {
+	background-color: var(--turquoise-20);
+}
+
+.benefit-img, .plan-img, .saving-img {
+	background-color: var(--turquoise-40);
+	color: var(--beige-gold-30);
+}
+
+#benefits, #product-overview, #login {
+	color: var(--turquoise-40);
+}
+
+.button-discover, .button-cb {
+	background-color : var(--turquoise-40);
+	color: var(--beige-gold-30);
+}
+
+.button-discover:hover {
+	background-color: var(--turquoise-30);
+}
+
+.content-header > div {
+	background-color: var(--white-00);
+}
+
+.button-txt.inactive {
+	background-color: transparent;
+	color: var(--beige-gold-25);
+}
+
+.button-txt.inactive:hover {
+	background-color: var(--white-01);
+}
+
+.plan {
+	background-color: var(--white-05);
+}
+
+#login-window > div:first-child {
+	background-color : var(--white-00);
+}
+
+#login-window > div:first-child:hover {
+	background-color: var(--white-01);
+}
+
+#inputs > *:focus {
+	outline-color: var(--beige-gold-30);
+}
+
+#inputs > *:hover {
+	border: 1px solid var(--white-01);
+}
+
+#saving {
+	color: var(--turquoise-40);
+}
+
+#inputs-buttons > a > p {
+	color: var(--white-04);
+}
+
+#inputs-buttons > a > p:hover {
+	color: #656565;
+}
+

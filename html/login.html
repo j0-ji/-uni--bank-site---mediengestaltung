@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--==========Meta=================-->
+	<meta charset="UTF-8">
+	<meta content="" name="description">
+	<!--==========Title================-->
+	<title>EvergreenLogin</title>
+	<!--==========Shortcut-icon========-->
+	<link href="../img/brand-logo/EvergreenBank.png" rel="shortcut icon">
+	<!--==========Stylesheets==========-->
+	<link href="../css/global.css" rel="stylesheet">
+	<link href="../css/color-themes.css" rel="stylesheet">
+	<link href="../css/login.css" rel="stylesheet">
+	<link href="../css/mediaQuerries.css" rel="stylesheet">
+	<!--==========BETA-Styles==========-->
+	<link href="" rel="stylesheet">
+</head>
+<body class="main-theme config view-config background">
+	<div id="main-gc">
+		<!--======HEADER=====================-->
+		<header class="turquoise00-bg">
+			<div id="header-content">
+				<section id="header-left">
+					<a href="../index.html"><img alt="logo" src="../img/brand-logo/EvergreenBank.png"></a>
+					<h2>
+						<mark class="gold30">Evergreen</mark>
+						Bank
+					</h2>
+				</section>
+				<section id="header-mid"></section>
+				<!--======NAVIGATION in HEADER=====================-->
+				<nav id="header-right">
+					<!--TODO: change to white icons-->
+					<div id="nav-cb-button" class="button-img" onclick="cbswitch.toggleIsPrivate()"><img alt="p/b" id="business-icon" class="icon"
+																																															 src="../img/icons/UI/work-off-white/2x/outline_work_off_white_36dp.png"/></div>
+					<a class="button-img" href="../index.html"><img alt="login" class="icon"
+																															src="../img/icons/UI/logout-white/2x/outline_logout_white_36dp.png"/></a>
+					<div id="menu-button" class="button-img" onclick="menu.toggleMenu()"><img alt="login" class="icon"
+																																										src="../img/icons/UI/menu-white/2x/outline_menu_white_36dp.png"/></div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="turquoise10-bg">
+				<div id="menu">
+					<div id="menu-buttons">
+						<a href="../index.html" id="home">
+							<h2 class="un">Home</h2>
+						</a>
+						<a href="./save-n-invest.html" id="save-n-invest">
+							<h2 class="un">Save & Invest</h2>
+						</a>
+						<a href="" id="mortgage">
+							<h2 class="un">Mortgage</h2>
+						</a>
+						<a href="" id="credit">
+							<h2 class="un">Credit</h2>
+						</a>
+						<a href="" id="insurance">
+							<h2 class="un">Insurance</h2>
+						</a>
+						<a href="" id="about-us">
+							<h2 class="un">About us</h2>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="login-bg" class="white20-bg">
+				<div id="login" class="content">
+					<div id="login-header">
+						<h1 class="small">Login</h1>
+						<hr class="solid turquoise centered custom-w50">
+					</div>
+					<div id="login-window" class="white00-bg">
+						<div>
+							<div id="private-button" class="button-txt button-cb left">PRIVATE</div>
+							<div id="business-button" class="button-txt button-cb right inactive" onclick="cbswitch.toggleIsPrivate()">BUSINESS</div>
+						</div>
+						<div id="inputs">
+							<input type="text" id="name" name="user_name" placeholder="username">
+							<label for="name" style="display: none">Username</label>
+							<input type="text" id="password" name="user_password" placeholder="password">
+							<label for="password" style="display: none">Password</label>
+						</div>
+						<div id="inputs-buttons">
+							<a class="inputs-button center" href=""><p>Forgot password</p></a>
+							<a class="inputs-button center" href=""><p>Register</p></a>
+						</div>
+						<div>
+							<a href="" id="submit" class="button-txt button-discover" ><p>LOGIN</p></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="turquoise00-bg">
+			<div id="footer">
+				<div>
+					<div>
+						<p><mark class="gold30">Get in touch</mark></p>
+						<a href=""><p>About</p></a>
+						<a href=""><p>Careers</p></a>
+					</div>
+					<div>
+						<p><mark class="gold30">Support</mark></p>
+						<a href=""><p>FAQs</p></a>
+						<a href=""><p>Help Center</p></a>
+					</div>
+				</div>
+				<div>
+					<div>
+						<p><mark class="gold30">Products</mark></p>
+						<a href=""><p>Private</p></a>
+						<a href=""><p>Business</p></a>
+					</div>
+					<div>
+						<p><mark class="gold30">Contact</mark></p>
+						<a href=""><p>contact@evergreen.com</p></a>
+						<a href=""><p>support@evergreen.com</p></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../js/login.js"></script>
+	<script src="../js/menu.js"></script>
+</body>
+</html>

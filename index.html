@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	TODO: 1. responsiveness
+	TODO: 2. transitions
+	TODO: 3. main menu
+	TODO: 4. Themes
+-->
+
+<head>
+	<!--==========Meta=================-->
+	<meta charset="UTF-8">
+	<meta content="" name="description">
+	<!--==========Title================-->
+	<title>EvergreenBank</title>
+	<!--==========Shortcut-icon========-->
+	<link href="./img/brand-logo/EvergreenBank.png" rel="shortcut icon">
+	<!--==========Stylesheets==========-->
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/color-themes.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link href="css/mediaQuerries.css" rel="stylesheet">
+	<!--==========BETA-Styles==========-->
+	<link href="" rel="stylesheet">
+</head>
+<body class="main-theme config view-config background"> <!-- what are "view-config" and "background" for? -->
+	<div id="main-gc">
+		<!--======HEADER=====================-->
+		<header class="turquoise00-bg">
+			<div id="header-content">
+				<section id="header-left">
+					<a href="./index.html"><img alt="logo" src="./img/brand-logo/EvergreenBank.png"></a>
+					<h2>
+						<mark class="gold30">Evergreen</mark>
+						Bank
+					</h2>
+				</section>
+				<section id="header-mid"></section>
+				<!--======NAVIGATION in HEADER=====================-->
+				<nav id="header-right">
+					<!--TODO: change to white icons-->
+					<div id="nav-cb-button" class="button-img" onclick="cbswitch.toggleIsPrivate()"><img alt="p/b" id="business-icon" class="icon"
+																						 src="./img/icons/UI/work-off-white/2x/outline_work_off_white_36dp.png"/></div>
+					<a class="button-img" href="./html/login.html"><img alt="login" class="icon"
+																						 src="./img/icons/UI/login-white/2x/outline_login_white_36dp.png"/></a>
+					<div id="menu-button" class="button-img" onclick="menu.toggleMenu()"><img alt="login" class="icon"
+																						 src="./img/icons/UI/menu-white/2x/outline_menu_white_36dp.png"/></div>
+				</nav>
+			</div>
+		</header>
+		<!--======CONTENT====================-->
+		<main>
+			<section class="turquoise10-bg">
+				<div id="menu">
+					<div id="menu-buttons">
+						<a href="./html/save-n-invest.html" id="save-n-invest">
+							<h2 class="un">Save & Invest</h2>
+						</a>
+						<a href="" id="mortgage">
+							<h2 class="un">Mortgage</h2>
+						</a>
+						<a href="" id="credit">
+							<h2 class="un">Credit</h2>
+						</a>
+						<a href="" id="insurance">
+							<h2 class="un">Insurance</h2>
+						</a>
+						<a href="" id="about-us">
+							<h2 class="un">About us</h2>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="img-bg" id="title-screen">
+				<div class="semi-transparent">
+					<div class="content" id="title-screen-content">
+						<h1 class="big">The<mark class="gold30">
+							new</mark> way<br>of <mark class="gold30">banking</mark>
+							<hr class="gold30 solid left custom-w90" style="margin : 13px auto 0 0">
+							<mark class="small white">Green &#8226; Reliable &#8226; Fast</mark>
+						</h1>
+					</div>
+				</div>
+			</section>
+			<!--===================================-->
+			<section class="white00-bg">
+				<div id="benefits" class="content">
+					<div class="content-header" style="grid-column: 1 / -1; height: max-content">
+						<h1 class="small">Benefits</h1>
+						<hr class="solid turquoise centered custom-w50">
+					</div>
+					<div id="benefit-green">
+						<img class="benefit-img" src="./img/icons/benefits/5.png" alt="IMG-placeholder">
+						<p class="benefit-description">You choose where the money gets invested</p>
+					</div>
+					<div id="benefit-online-banking">
+						<img class="benefit-img" src="./img/icons/benefits/7.png" alt="IMG-placeholder">
+						<p class="benefit-description">Online and Mobile banking with security guarantee</p>
+					</div>
+					<div id="benefit-mobile-payments">
+						<img class="benefit-img" src="./img/icons/benefits/6.png" alt="IMG-placeholder">
+						<p class="benefit-description">Mobile contactless payments with Apple Pay and Google Pay</p>
+					</div>
+					<div id="benefit-card">
+						<img class="benefit-img" src="./img/icons/benefits/8.png" alt="IMG-placeholder">
+						<p class="benefit-description">Free EvergreenBank giro card</p>
+					</div>
+					<div id="benefit-free-withdrawal">
+						<img class="benefit-img" src="./img/icons/benefits/9.png" alt="IMG-placeholder">
+						<p class="benefit-description">Free money withdrawal at over 3000 EvergreenGroup ATMs</p>
+					</div>
+					<div id="benefit-support">
+						<img class="benefit-img" src="./img/icons/benefits/10.png" alt="IMG-placeholder">
+						<p class="benefit-description">Support on 7 days a week, 24 hours a day</p>
+					</div>
+				</div>
+			</section>
+			<!--===================================-->
+			<section class="white10-bg">
+				<div id="product-overview" class="content">
+					<div class="content-header">
+						<h1 class="small">Overview</h1>
+						<hr class="solid turquoise centered custom-w50">
+						<p>Check out our classic and premium Accounts too with many more benefits.
+							Decide what services you need and customize your experience.</p>
+						<div>
+							<div id="private-button" class="button-txt button-cb left">PRIVATE</div>
+							<div id="business-button" class="button-txt button-cb right inactive" onclick="cbswitch.toggleIsPrivate()">BUSINESS</div>
+						</div>
+					</div>
+					<div id="products">
+						<div id="green-basic" class="plan">
+
+							<img class="plan-img" src="./img/icons/plans/leaf.png" alt="IMG-Placeholder">
+							<div>
+								<!-- TODO: nachforschen, ob "mark" bleiben soll bei "BASIC", "CLASSIC", "PREMIUM"! -->
+								<h2>Green Basic</h2>
+								<ul>
+									<li> Lorem ipsum dolor sit</li>
+									<li> quo rem repellendus sapiente</li>
+									<li> Aliquam aperiam culpa fugit</li>
+								</ul>
+								<div id="cost-basic">
+									<p class="bold gold30">Free</p>
+									<p style="display: none">/month</p>
+								</div>
+								<a href="./html/discover/basic" class="button-txt button-discover">DISCOVER</a>
+							</div>
+						</div>
+						<div id="green-classic" class="plan">
+							<img class="plan-img" src="./img/icons/plans/bank.png" alt="IMG-Placeholder">
+							<div>
+								<h2>Green Classic</h2>
+								<ul>
+									<li> Lorem ipsum dolor sit</li>
+									<li> quo rem repellendus sapiente</li>
+									<li> Aliquam aperiam culpa fugit</li>
+								</ul>
+								<div id="cost-classic">
+									<p class="bold gold30">5.99$</p>
+									<p>/month</p>
+								</div>
+								<a href="./html/discover/classic" class="button-txt button-discover">DISCOVER</a>
+							</div>
+						</div>
+						<div id="green-premium" class="plan">
+							<img class="plan-img" src="./img/icons/plans/diamond.png" alt="IMG-Placeholder">
+							<div>
+								<h2>Green Premium</h2>
+								<ul>
+									<li> Lorem ipsum dolor sit</li>
+									<li> quo rem repellendus sapiente</li>
+									<li> Aliquam aperiam culpa fugit</li>
+								</ul>
+								<div id="cost-premium">
+									<p class="bold gold30">12.99$</p>
+									<p>/month</p>
+								</div>
+								<a href="./html/discover/premium" class="button-txt button-discover">DISCOVER</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="turquoise00-bg">
+			<div id="footer">
+				<div>
+					<div>
+						<p><mark class="gold30">Get in touch</mark></p>
+						<a href=""><p>About</p></a>
+						<a href=""><p>Careers</p></a>
+					</div>
+					<div>
+						<p><mark class="gold30">Support</mark></p>
+						<a href=""><p>FAQs</p></a>
+						<a href=""><p>Help Center</p></a>
+					</div>
+				</div>
+				<div>
+					<div>
+						<p><mark class="gold30">Products</mark></p>
+						<a href=""><p>Private</p></a>
+						<a href=""><p>Business</p></a>
+					</div>
+					<div>
+						<p><mark class="gold30">Contact</mark></p>
+						<a href=""><p>contact@evergreen.com</p></a>
+						<a href=""><p>support@evergreen.com</p></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/index.js"></script>
+	<script src="./js/menu.js"></script>
+</body>
+</html>
